@@ -1,0 +1,147 @@
+body{
+    background-image: url("img/body-bg.png")
+}
+
+a {
+    text-decoration: none;
+}
+.navbar {
+    position: relative;
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    font-size: 63px;
+    font-weight: normal;
+    color: #13ba56;
+    cursor: pointer;
+}
+.menu  a:hover{
+    color: #13ba56;
+}
+#logo-img {
+    width: 7%;
+    margin: 30px 7px 0px 30px;
+    border-right: ridge 2px;
+}
+
+.logo, .menu, .account{
+    display: inline;
+}
+.account{
+    float: right;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer
+}
+
+i.fa.fa-user {
+    margin-right: 3px;
+    color: #777777;
+}
+
+i.fa.fa-lock{
+    margin-right: 3px;
+    color: #777777;
+}
+
+.menu{
+    text-align: center;
+    margin-left: 24%;
+    margin-right: 24%;
+    word-spacing: 26px;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    font-size: 20px;
+    color: #777777;
+    font-family: 'Exo', sans-serif;
+}
+.menu, .title, .account{
+    display:inline-block;
+}
+
+ #home, #products, #contacts {
+        text-decoration: none;
+        font-size: 20px;
+        color: #777777;
+ }
+
+ /*#home, #products, #contacts :hover{
+     color: black;
+ }*/
+ 
+#create{
+    border-right: solid 2px;
+    padding-right: 8px;
+    border-right: solid 1px;
+    color: #777777;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif;
+    font-size: 80%;
+}
+
+#create :hover{
+    color: #13ba56;
+}
+
+#login{
+    padding-right: 8px;
+    color: #777777;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif;
+    font-size: 80%;
+}
+
+#login :hover{
+    color: #13ba56;
+}
+
+figure.img{
+    width: 100%;
+    height: 30%;
+}
+
+@keyframes slidy {
+    0%{ left: 0px;}
+	17%{ left: 0px;}
+	25%{ left: -100%;}
+	37%{ left: -100%;}
+	45%{ left: -200%;}
+	57%{ left: -200%;}
+	65%{ left: -300%;}
+	77%{ left: -300%;}
+	85%{ left: -400%;}
+	95%{ left: -400%;}
+    }
+    
+    
+    body { margin: 0; } 
+    #sliderImages { overflow: hidden; }
+    #sliderImages figure img { width: 20%; float: left; }
+    #sliderImages figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 10s slidy infinite; 
+    }
+    
+    .brands {
+        margin-top: 50px;
+        border-bottom: solid 1px;
+        padding: 0% 0% 0% 10%;
+        border-top: solid 1px;
+    }
+
+    
