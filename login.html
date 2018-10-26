@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div class="menubar">
+        <ul class="accountBar">
+            <li><a href="#" title="back to Home page">Home</a></li>
+            <li><span>Account</span></li>
+        </ul>
+        <div class="row sidebar sidebar_off">
+                <div id="maincontent" class="content">
+                    <div id="customer">
+                        <h2 class="page_heading">
+                            <span class="heading">Customer Login
+                                <span class="bord1"></span>
+                                <span class="bord2"></span>
+                            </span>
+                        </h2>
+                        <div class="form-horizontal">
+                            <form method="POST" id="customerlogin">
+                                <div id="login_email" class=" clearfix large_form form-group">
+                                    <label for="customer-email" class="login control-label col-sm-4">Email Address</label>
+                                    <div class="col-sm-4">
+                                        <input type="email" id="customer_email" class="form-control" size="30" />
+                                    </div>
+                                </div>
+                                <div id="login_password" class="clearfix large_form form-group ">
+                                    <label for="customer-password" class="login control-label col-sm-4">Password</label>
+                                    <div class="col-sm-4">
+                                        <input type="password" id="customer_password" class="form-control" size="16" />
+                                    </div>
+                                </div>
+                                <div  class="form-group">
+                                    <div class="action_buttom col-sm-offset-4 col-sm-4">
+                                        <input class="btn btn-primary" type="submit" value="Sign In" onclick="log()">
+                                        <span class="note">Or <a href="create_account.html">Create an Account</a></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+</body>
+
+</html>

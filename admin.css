@@ -1,0 +1,120 @@
+header#header {
+    height: 55px;
+    width: 100%;
+    background: #13ba56;
+}
+header#header h1.site_title {
+    float: left;
+    margin: 0;
+    font-size: 22px;
+    display: block;
+    width: 23%;
+    height: 55px;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 1.8%;
+    line-height: 55px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #13ba56;
+}
+header#header h1.site_title a {
+    color: #fff;
+    text-decoration: none;
+}
+header#header h2.section_title {
+    text-align: center;
+    text-indent: 4.5%;
+    width: 68%;
+}
+ header#header h2.section_title {
+    float: left;
+    margin: 0;
+    font-size: 22px;
+    display: block;
+    width: 23%;
+    height: 55px;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 19.8%;
+    line-height: 55px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #13ba56;
+}
+.btn_view_site {
+    float: right;
+    width: 9%;
+}
+#sidebar li a:hover{
+    text-decoration: underline;
+}
+.btn_view_site a {
+    display: block;
+    margin-top: 12px;
+    width: 91px;
+    height: 27px;
+    text-align: center;
+    line-height: 29px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #13ba56;
+}
+aside#sidebar {
+    width: 23%;
+    background: #E0E0E3;
+    float: left;
+    height: 600px;
+    max-height: 975px;
+    margin-top: 0px;
+}
+aside{
+    display: block;
+}
+#sidebar h3 {
+    color: #1F1F20;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 15px;
+    margin: 35px 0 10px 6%;
+    display: block;
+    float: left;
+    width: 90%;
+}
+#sidebar ul {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    height: 6%;
+}
+
+#sidebar li {
+    margin: 0 0 6% 12%;
+    padding: 0;
+}
+li {
+    display: list-item;
+    list-style: none;
+}
+#sidebar li a {
+    color: #666666;
+    padding-left: 25px;
+    text-decoration: none;
+    display: inline-block;
+    height: 17px;
+    line-height: 17px;
+    text-shadow: 0 1px 0 #fff;
+    margin: 2px 0;
+}
+#sidebar div .div1 {
+margin: 0%;
+}
+#sidebar div .div2 {
+    margin: 0%;
+    }
+.main_container{
+    background-color: bisque;
+    margin-top: 1px;
+    width: 76%;
+    margin-left: 24%;
+    max-height: 975px;
+    height: 600px;
+}
