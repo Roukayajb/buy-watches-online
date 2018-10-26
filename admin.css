@@ -1,21 +1,24 @@
 header#header {
     height: 55px;
-    width: 100%;
-    background: #13ba56;
+    width: 102%;
+    background: black;
+    margin-top: -1%;
+    margin-left: -1%;
 }
 header#header h1.site_title {
     float: left;
     margin: 0;
-    font-size: 22px;
+    font-size: 16px;
     display: block;
-    width: 23%;
+    width: 35%;
     height: 55px;
     font-weight: normal;
+    font-family: sans-serif;
     text-align: left;
     text-indent: 1.8%;
     line-height: 55px;
     color: #fff;
-    text-shadow: 0 -1px 0 #13ba56;
+    text-shadow: 0 -1px 0 #fff;
 }
 header#header h1.site_title a {
     color: #fff;
@@ -25,29 +28,41 @@ header#header h2.section_title {
     text-align: center;
     text-indent: 4.5%;
     width: 68%;
+    font-family: sans-serif;
 }
  header#header h2.section_title {
     float: left;
     margin: 0;
-    font-size: 22px;
+    font-size: 16px;
     display: block;
-    width: 23%;
+    width: 35%;
     height: 55px;
     font-weight: normal;
-    text-align: left;
-    text-indent: 19.8%;
+    text-align: center;
+    text-indent: -1.2%;
     line-height: 55px;
     color: #fff;
-    text-shadow: 0 -1px 0 #13ba56;
+    text-shadow: 0 -1px 0 #fff;
+ 
+}
+header#header h2.section_title a{
+    text-decoration: none;
+    color: #fff;
 }
 .btn_view_site {
     float: right;
-    width: 9%;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 #sidebar li a:hover{
     text-decoration: underline;
 }
-.btn_view_site a {
+#header.btn_view_site a {
     display: block;
     margin-top: 12px;
     width: 91px;
@@ -56,15 +71,19 @@ header#header h2.section_title {
     line-height: 29px;
     color: #fff;
     text-decoration: none;
-    text-shadow: 0 -1px 0 #13ba56;
+    text-shadow: 0 -1px 0 #fff;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 aside#sidebar {
-    width: 23%;
-    background: #E0E0E3;
+    width: 25%;
     float: left;
     height: 600px;
-    max-height: 975px;
+    max-height: 1960px;
     margin-top: 0px;
+    margin-left: -1%;
+    position: relative;
+    padding: 2% 0% 0% 2%;
 }
 aside{
     display: block;
@@ -73,11 +92,12 @@ aside{
     color: #1F1F20;
     text-transform: uppercase;
     text-shadow: 0 1px 0 #fff;
-    font-size: 15px;
+    font-size: 17px;
     margin: 35px 0 10px 6%;
     display: block;
     float: left;
     width: 90%;
+    font-family: sans-serif;
 }
 #sidebar ul {
     clear: both;
@@ -96,29 +116,63 @@ li {
 }
 #sidebar li a {
     color: #666666;
-    padding-left: 25px;
     text-decoration: none;
     display: inline-block;
     height: 17px;
     line-height: 17px;
     text-shadow: 0 1px 0 #fff;
     margin: 2px 0;
+    width: 50%;
 }
-#sidebar div .div1 {
+#sidebar div .div1 .div2 .div3 {
 margin: 0%;
 }
-#sidebar div .div2 {
-    margin: 0%;
-    }
 .main_container{
-    /*background-color: bisque;*/
     margin-top: 1px;
     width: 76%;
     margin-left: 24%;
-    max-height: 975px;
+    max-height: 1960px;
     height: 600px;
+    display: block;
+}
+i.fas.fa-lock  fas fa-plus-circle fas fa-user-circle{
+    margin-right: 14%;
+}
+.my_profile {
+    float: right!important;
+    margin-right: 5px;
+    margin-top: 1px;
 }
 
+i{
+    font-size: 15px;
+    margin-right: 5%;
+}
+#account{
+    padding-right: 8px;
+    border-right: solid 1px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif;
+    font-size: 80%;
+    text-decoration: none;
+}
+#icon1{
+    margin-right: 5px;
+    color: white;
+}
+#logout{
+        padding-right: 8px;
+        color: white;
+        cursor: pointer;
+        font-family: 'Exo', sans-serif;
+        font-size: 80%;
+        text-decoration: none;
+}
+#icon2 {
+    margin-right: 5px;
+    color:white;
+}
 /*products en Dashbord*/
 
 #index{
@@ -293,5 +347,4 @@ input#categorie {
     background-color: #337ab7;
     border-color: #2e6da4;
 }
-
 
