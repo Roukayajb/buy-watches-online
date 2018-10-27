@@ -1,38 +1,37 @@
 function log() {
-    var usermail = document.getElementById("customer_email");
-    var userpwd = document.getElementById("customer_password");
+    var usermail = document.getElementById("customer-email").value;
+    var userpwd = document.getElementById("customer-password").value;
     var users, loggedusers = [];
-    users = JSON.parse(localStorage.getItem('tabOfClient') || '[]');
+    console.log(usermail);
+    console.log(userpwd);
+    users = JSON.parse(localStorage.getItem('tabOfClient'));
     for (var i = 0; i < users.length; i++) {
-        if ((usermail.value == users[i].Email) && (userpwd.value == users[i].pwd)) {
-            alert("welcome" + users[i].name);
-            window.location.href = "watches.html";
+        if ((usermail == users[i].Email) && (userpwd == users[i].Password)) {
+            alert("welcome" + " "+users[i].Firstname);
             var logged = {
                 id: i,
-                mail: usermail.value,
-                password: userpwd.value
+                mail: usermail,
+                password: userpwd
             }
             loggedusers.push(logged);
-            console.log(loggeduser);
+            console.log(loggedusers);
             localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
+            window.location.href = "watches.html";
             break;
-        } else if (((usermail.value == users[i].email) && (userpwd.value == users[i].pwd)) && userpwd.value == "admin") {
-            alert("welcome" + users[i].nom);
-            window.location = "admin.html";
+        } else if (((usermail == users[i].email) && (userpwd == users[i].Password)) && userpwd  == "admin") {
+            alert("welcome" + users[i].Firstname);
             var logged = {
-                mail: usermail.value,
-                password: userpwd.value
+                mail: usermail,
+                password: userpwd
             }
             loggedusers.push(logged);
-            console.log(loggeduser);
+            console.log(loggedusers);
             localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
-            break;
-        }
-        else {
-            i++;
+            window.location = "admin.html";
         }
     }
     if (i == users.length) {
         alert("please create an account!");
     }
+    
 }

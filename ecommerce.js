@@ -6,7 +6,7 @@ function Inscription() {
     var adresse = document.getElementById("adresse").value;
     var age = document.getElementById("age").value;
     var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+    var password = document.getElementById("pass").value;
 
     var tabOfClient = JSON.parse(localStorage.getItem("tabOfClient"));
     if (tabOfClient == null) {
@@ -98,19 +98,18 @@ function emailTest() {
 function ListClient()
 {
 var tabOfClient=JSON.parse(localStorage.getItem("tabOfClient"));
-
+var tab=document.getElementById("divlist");
 var list="<table id='table'>";
-for(i=0; i<tabOfClient.length; i++){
-    
+for(var i=0; i<tabOfClient.length; i++){
     list+="<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone Number</th><th>Adresse</th><th>Age</th><th>Solde</th></tr>";
     list+="<tr><td>"+ tabOfClient[i].Firstname+"</td>";
-    list+="<td></td>"+tabOfClient[i].Lastname+"</td>";
-    list+="<td></td>"+tabOfClient[i].Email+"</td>";
-    list+="<td></td>"+tabOfClient[i].Tel+"</td>";
-    list+="<td></td>"+tabOfClient[i].Adresse+"</td>";
-    list+="<td></td>"+tabOfClient[i].Age+"</td>";
-    list+="<td></td>"+tabOfClient[i].Solde+"</td></tr>";
+    list+="<td>"+tabOfClient[i].Lastname+"</td>";
+    list+="<td>"+tabOfClient[i].Email+"</td>";
+    list+="<td>"+tabOfClient[i].Tel+"</td>";
+    list+="<td>"+tabOfClient[i].Adresse+"</td>";
+    list+="<td>"+tabOfClient[i].Age+"</td>";
+    list+="<td>"+tabOfClient[i].Solde+"</td></tr>";
 }
 list+= "</table>";
-divlist.innerHTML=tabOfClient;
+tab.innerHTML=list;
 }
