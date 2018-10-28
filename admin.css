@@ -348,3 +348,37 @@ input#categorie {
     border-color: #2e6da4;
 }
 
+#divlist{
+
+    margin-top: 8%;
+}
+
+table th{
+    
+    color: #f5eded;
+    height: 42px;
+    background-color: rgb(13, 13, 14);
+    font-family: serif;
+    
+}
+table tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+    height: 50px;
+   
+}
+tr:nth-child(even){
+    background-color: #e8e9ed;
+
+}
+table td, table th {
+    padding-left: 8px;
+}
+table{
+    width: 85%;
+    margin: 0 0% 0% 3%;
+   
+}

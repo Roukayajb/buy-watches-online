@@ -8,6 +8,19 @@ div{
         font-weight: normal;
         line-height: 1.5em;
 }
+#pro{
+    font: 19px Roboto Condensed;
+    margin: 3% 0% 0% 42%
+}
+strong{
+    font-weight: bold;
+    vertical-align: baseline;
+}
+.menubar{
+    height: 100%;
+    background-color: #fff; 
+    background-image: linear-gradient(#fff,  #97a1b870);
+}
 .accountBar {
     margin: 20px 65px 35px;
     color: #ffffff;
@@ -111,6 +124,7 @@ span {
     font-weight: normal;
     line-height: 1.5em;
     display: block;
+    margin-top: 3%;
 }
 input{
     margin: 0;
@@ -207,6 +221,7 @@ input[type="password"] {
     box-shadow: none !important;
 }
 .btn {
+    margin: 4% 0% 4% 11%;
     display: inline-block;
     font-weight: normal;
     line-height: 1.428571429;
