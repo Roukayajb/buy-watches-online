@@ -15,7 +15,7 @@ function log() {
             }
             loggedusers.push(logged);
             localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
-            window.location.href = "HomeClient.html";
+            window.location.href = "homeClient.html";
             break;
         } else if (((usermail == users[i].email) && (userpwd == users[i].Password)) && userpwd  == "admin") {
             alert("welcome" + users[i].Firstname);
