@@ -277,8 +277,11 @@ tr:nth-child(even){
 table td, table th {
     padding-left: 8px;
 }
-table{
+table, .table1{
     width: 60%;
     margin: 0 0% 0% 3%;
    
+}
+#divlist{
+    margin-top: 5%;
 }

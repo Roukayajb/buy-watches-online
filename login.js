@@ -1,38 +1,45 @@
 function log() {
-    var usermail = document.getElementById("customer_email");
-    var userpwd = document.getElementById("customer_password");
-    var users, loggedusers = [];
-    users = JSON.parse(localStorage.getItem('tabOfClient') || '[]');
+    var usermail = document.getElementById("customer-email").value;
+    var userpwd = document.getElementById("customer-password").value;
+    var loggedusers = [];
+    console.log(usermail);
+    console.log(userpwd);
+    var users = JSON.parse(localStorage.getItem('tabOfClient'));
     for (var i = 0; i < users.length; i++) {
-        if ((usermail.value == users[i].Email) && (userpwd.value == users[i].pwd)) {
-            alert("welcome" + users[i].name);
-            window.location.href = "watches.html";
+        if ((usermail == users[i].Email) && (userpwd == users[i].Password)) {
+            alert("welcome" + " "+users[i].Firstname);
             var logged = {
-                id: i,
-                mail: usermail.value,
-                password: userpwd.value
+                id: users[i].Id,
+                mail: usermail,
+                password: userpwd
             }
             loggedusers.push(logged);
-            console.log(loggeduser);
             localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
+            window.location.href = "homeClient.html";
             break;
-        } else if (((usermail.value == users[i].email) && (userpwd.value == users[i].pwd)) && userpwd.value == "admin") {
-            alert("welcome" + users[i].nom);
+        } else if (((usermail == users[i].email) && (userpwd == users[i].Password)) && userpwd  == "admin") {
+            alert("welcome" + users[i].Firstname);
+            var logged = {
+                mail: usermail,
+                password: userpwd
+            }
+            loggedusers.push(logged);
+            console.log(loggedusers);
+            localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
             window.location = "admin.html";
-            var logged = {
-                mail: usermail.value,
-                password: userpwd.value
-            }
-            loggedusers.push(logged);
-            console.log(loggeduser);
-            localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
-            break;
-        }
-        else {
-            i++;
         }
     }
     if (i == users.length) {
         alert("please create an account!");
     }
+    
+}
+
+
+function logout() {
+   
+    loggedusers = JSON.parse(localStorage.getItem('loggeduser'));        
+        localStorage.removeItem("loggeduser");
+        document.location.href = "watches.html";
+ 
 }

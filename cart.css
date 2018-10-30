@@ -1,0 +1,39 @@
+
+.breadcrumb {
+    margin: 5% 0% 0% 1%;
+    color: #ffffff;
+    background: #13ba56;
+    padding: 10px 15px;
+    border-radius: 0;
+    width: 95%;
+}
+ul{
+    list-style: none;
+    outline: none !important;
+    vertical-align: top;
+    line-height: 0.5em;
+    display: inline-block;
+}
+li{
+    outline: none !important;
+    vertical-align: top;
+    background: transparent;
+    font-weight: normal;
+    line-height: 0.5em;
+}
+a {
+    color: white;
+    text-decoration: none;
+    background: transparent;
+}
+li>a:hover{
+    color:black;
+}
+.breadcrumb > li + li:before {
+    
+    color: #cccccc;
+    content: "/\00a0";
+}
+.breadcrumb > li {
+    display: inline-block;
+}
