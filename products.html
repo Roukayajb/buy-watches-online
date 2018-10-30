@@ -1,105 +1,229 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Products List</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="admin.css" />
-
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
-<body>
-    <header id="header">
-        <hgroup>
-            <h1 class="site_title"><a href="admin.html">My DASHBOARD</a></h1>
-            <h2 class="section_title"><a href="watches.html">View Site</a></h2>
-            <div class="btn_view_site">
-                <a id="account" href="profile.html"><i id="icon1" class="fas fa-user-alt"></i>Admin</a>
-                <a id="logout" href="watches.html"><i id="icon2" class="fas fa-lock"></i>Log Out</a>
+
+<body onload="slide()">
+    <header>
+        <nav>
+            <div class="account">
+                <a href=# id="create">
+                    <i class="fa fa-user"></i>Create Account</a>
+                <a href=# id="login">
+                    <i class="fa fa-lock"></i>Log In</a>
             </div>
-        </hgroup>
+            <div class="navbar">
+
+                <div class="title">
+                    <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
+                    <a href=#>
+                        <h1 class="logo">Watches</h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href=# id="home">Home</a>
+                    <a href=# id="products">Products</a>
+                    <a href=# id="contacts">Contacts</a>
+                </div>
+            </div>
+
+        </nav>
+
     </header>
-    <aside id="sidebar" class="column">
-        <h3>Content </h3>
-        <div class="div1">
-            <ul class="toggle">
-                <li id="new_article"><a href="products.html"><i class="fas fa-plus-circle"></i>New Product</a></li>
-                <li id="view_article"><a href="list_product.html"><i class="fas fa-eye"></i>View Products</a></li>
-                <li id="view_command"><a href="list_command.html"><i class="fas fa-eye"></i>View Commands</a></li>
-            </ul>
-        </div>
-        <h3>Users </h3>
-        <div class="div2">
-            <ul class="toggle">
-                <li id="view_users"><a href="listClient.html"><i class="fas fa-eye"></i>View Users</a></li>
-                <li id="admin_profile"><a href="profil.html"><i class="fas fa-user-circle"></i>Your Profile</a></li>
-            </ul>
-        </div>
-        <div class="div3">
-            <ul class="toggle">
-                <li id="deconnexion"></li>
-            </ul>
-        </div>
-    </aside>
-    <section id="main" class="main_container">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-            <span class="title"><h4>Products</h4></span>
-        </div>
-      </div>
+    <section>
+        <div id="main">
+            <div class="bg1">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="watches.html" class="homepage-link">Home</a>
+                        </li> /
+                        <li>
+                            <span class="page-title">Products</span>
+                        </li>
+                    </ul>
+                    <div class="sidebar">
+                        <div class="column_center">
+                            <div id="main_content">
+                                <div class="collection-scope">
+                                    <div class="page-header">
+                                        <h1 class="page-heading">
+                                            <span class="heading_ins">
+                                                Products
+                                                <span class="bord1" style="margin-right: 45px;"></span>
+                                                <span class="bord2" style="margin-left: 45px;"></span>
+                                            </span>
+                                        </h1>
+                                    </div>
+                                    <div class="page-content">
+                                        <div class="product-listing-main">
+                                            <table>
+                                                <tr>
+                                                    <td class="prod-1">
+                                                        <div class="showc_img">
+                                                            <img id="si_1" src="img/prod-1.png" alt="" />
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money">$169.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>FAIRFIELD SUPERNOVA CHRONOGRAPH 41MM LEATHER STRAP WATCH</h4>
+                                                            </div>
+                                                            <div class="product_desc">
+                                                                Our elegant products are only of premium quality and we hope that you`ll appreciate all...
+                                                            </div>
+                                                            <div class="product_link">
+                                                                <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="prod-2">
+                                                        <div class="showc_img">
+                                                            <img id="si_1" src="img/prod-2.png" alt="" />
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money">$229.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Waterbury Traditional Chronograph 42mm Stainless Steel Bracelet
+                                                                    Watch</h4>
+                                                            </div>
+                                                            <div class="product_desc">
+                                                                Hours, minutes, seconds. Fitted with the Manufacture Calibre MT5612, the Heritage Black Bay S&G model also introduces a date
+                                                                function to the Black Bay family. </div>
+                                                            <div class="product_link">
+                                                                <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="prod-3">
+                                                        <div class="showc_img">
+                                                            <img id="si_1" src="img/prod-3.png" alt="" />
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money">$299.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>New TUDOR 1926 Watch - Baselworld 2</h4>
+                                                            </div>
+                                                            <div class="product_desc">
+                                                                Un cronografo dal meccanismo complicatissimo rende questo modello un sofisticato gioiello dell'industria delle lancette su
+                                                                quadrante
+                                                                <div
+                                                                    class="product_link">
+                                                                    <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table>
+                                                <tr>
+                                                    <td class="prod-4">
+                                                        <div class="showc_img">
+                                                            <img id="si_1" src="img/prod-4.png" alt="" />
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money">$229.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>EDIFICE CASIO WATCH</h4>
+                                                            </div>
+                                                            <div class="product_desc">
+                                                                Our elegant products are only of premium quality and we hope that you`ll appreciate all...
+                                                            </div>
+                                                            <div class="product_link">
+                                                                <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="prod-5">
+                                                        <div class="showc_img">
+                                                            <img id="si_1" src="img/prod-5.png" alt="" />
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money">$399.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Freelancer Men's Automatic Chronograph Blue Leather Watch,
+                                                                    42mm</h4>
+                                                            </div>
+                                                            <div class="product_desc">
+                                                                The freelancer chronograph combines sophistication with a powerful and extremely stylish aesthetic. The ideal timepiece for
+                                                                any activity or occasion, this chronograph compilation is
+                                                                powered by a mechanical self-winding RW5000 movement with
+                                                                a 46-hour power reserve
+                                                                <div
+                                                                    class="product_link">
+                                                                    <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="prod-6">
+                                                        <div class="showc_img">
+                                                            <img id="si_1" src="img/prod-6.png" alt="" />
+                                                        </div>
+                                                        <div class="product_info">
+                                                            <div class="product_price">
+                                                                <span class="money">$699.00</span>
+                                                            </div>
+                                                            <div class="product_name">
+                                                                <h4>Bulova Men's Watch Chronograph C Special Edition</h4>
+                                                            </div>
+                                                            <div class="product_desc">
+                                                                Chronograph C special edition from the Archive series The six-hand chronograph movement has a patented high-performance quartz
+                                                                technology with a 262 kHz vibrational frequency for accurate
+                                                                accuracy.
+                                                                <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
 
-        <div class="panel-body">  
-      <form>    
-            <input type="text" id="index">
+                                                            </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
 
-        <div class="control-group"> 
-            <label>Product</label>
-          <div class="controles">
-            <input type="text" id="name">
-          </div>
-        </div>     
-            <br>
 
-            <div class="control-group"> 
-            <label>Description</label>
-          <div class="controles">
-            <textarea id="discription"></textarea>
-          </div>
-        </div>
-            <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
 
-            <div class="control-group"> 
-            <label>Category</label>
-          <div class="controles">
-            <input type="text" id="categorie">
-          </div>
-        </div>
-            <br>
 
-            <div class="control-group"> 
-            <label>Price</label>
-          <div class="controles">
-            <input type="text" id="price">
-          </div>
+                </div>
 
-        <div id="image">
-            <input type="file" id="bannerImg"  />
-            <img src="" id="tableBanner" />
-            <div id="res"></div>
-        </div>
+            </div>
+        </section>
+<aside>
+        <div class="column_left">
+                <div class="widget">
+                    <h3 class="widget_header">
+                        <span class="heading_ins">
+                            Product Types
+                            <span class="bord1" style="margin-right: 45px;"></span>
+                            <span class="bord2" style="margin-left: 45px;"></span>
+                            </span>
+                        </span>
+                    </h3>
+                </div>
+            </div>
 
-            <button type="button" class="btn btn-primary" value="submit" onclick="Add()" id="add"> Add</button>
-        </div>
-       </div>   
-      </div> 
-
-    </form>
-</section>
+</aside>
 </body>
-
-<script type="text/javascript" src="js/script.js"></script>
 
 </html>

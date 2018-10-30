@@ -1,85 +1,197 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
+
 <body onload="slide()">
     <header>
-         <nav>
-                <div class="account">
-                        <a href=# id="create"><i class="fa fa-user"></i>Create Account</a>
-                        <a href=# id="login"><i class="fa fa-lock"></i>Log In</a>
-                    </div>
-        <div class="navbar">
-
-             <div class="title">
-             <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
-             <a href=#><h1 class="logo">Watches</h1></a>
+        <nav>
+            <div class="account">
+                <a href=# id="create">
+                    <i class="fa fa-user"></i>Create Account</a>
+                <a href=# id="login">
+                    <i class="fa fa-lock"></i>Log In</a>
+                <a href="product_cart.html" id="cart">
+                        <i class="fa fa-cart-plus"></i>Cart</a>
             </div>
-             <div class="menu">
-              <a href=# id="home">Home</a>
-              <a href=# id="products" >Products</a> 
-              <a href=# id="contacts">Contacts</a>    
-            </div>  
-        </div>  
-            
-         </nav>
+            <div class="navbar">
 
-         
+                <div class="title">
+                    <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
+                    <a href=#>
+                        <h1 class="logo">Watches</h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href=# id="home">Home</a>
+                    <a href=# id="products">Products</a>
+                    <a href=# id="contacts">Contacts</a>
+                </div>
+            </div>
+
+        </nav>
+
+
 
     </header>
     <section>
 
-                    <div id="sliderImages">
-                            <figure>
-                          <img id="si_1" src="img/slide1.jpg" width="100%" />
-                          <img id="si_2" src="img/slide2.jpg" width="100%" />
-                          <img id="si_3" src="img/slide3.jpg" width="100%" />
-                          <img id="si_4" src="img/slide4.jpg" width="100%" />
-                          <img id="si_5" src="img/slide5.jpg" width="100%" />
-                         
-                          </figure>
-                      </div>
-                    <div class="products">
-                        <table>
-                           <tr>
-                                <td><img id="si_1" src="" alt="" /></td>
-                                <td><img id="si_1" src="" alt="" /> </td>
-                                <td><img id="si_1" src="" alt="" /> </td>
-                           </tr>
-                           <tr>
-                                <td><img id="si_1" src="" alt="" /> </td>
-                                <td><img id="si_1" src="" alt="" /> </td>
-                                <td><img id="si_1" src="" alt="" /> </td>
-                            </tr>
-                        </table>
-                    <div class="brands">
-                            <img id="si_1" src="img/guess.png" alt="" />
-                            <img id="si_1" src="img/movado.png" alt="" />
-                            <img id="si_1" src="img/rado.png" alt="" />
-                            <img id="si_1" src="img/seiko.png" alt="" />
-                            <img id="si_1" src="img/tissot.png" alt="" />
-                            <img id="si_1" src="img/tiwtiw.png" alt="" />
-                            <img id="si_1" src="img/twsteel.png" alt="" />
+        <div id="sliderImages">
+            <figure>
+                <img id="si_1" src="img/slide1.jpg" width="100%" />
+                <img id="si_2" src="img/slide2.jpg" width="100%" />
+                <img id="si_3" src="img/slide3.jpg" width="100%" />
+                <img id="si_4" src="img/slide4.jpg" width="100%" />
+                <img id="si_5" src="img/slide5.jpg" width="100%" />
 
-                    </div>
+            </figure>
+        </div>
+        <div class="featured">
+            <h3 class="page_heading">
+                <span class="heading_ins">Featured collections
+                    <span class="bord1" style="margin-right: 90px;"></span>
+                    <span class="bord2" style="margin-left: 90px;">
+                    </span>
+                </span>
+            </h3>
+            <table>
+                <tr>
+                    <td class="font">
+                        <a href=#>
+                            <div class="showc_img">
+                                <img id="si_1" src="img/men-watche.png" alt="">
+                            </div>
+                            <div class="ins">
+                                <h3>MEN’S WATCHES</h3>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
+                                <div class="btn">See collection</div>
+                            </div>
+                        </a>
+                    </td>
 
-                    </div>  
+                    <td>
+                        <a href=#>
+                            <div class="showc_img">
+                                <img id="si_1" src="img/ladies-watche.png" alt="">
+                            </div>
+                            <div class="ins">
+                                <h3>WOMEN'S WATCHES</h3>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
+                                <div class="btn">See collection</div>
+                            </div>
+                        </a>
+                    </td>
+
+                    <td>
+                        <a href=#>
+                            <div class="showc_img">
+                                <img id="si_1" src="img/sports-watche.png" alt="" />
+                            </div>
+                            <div class="ins">
+                                <h3>SPORTS WATCHES</h3>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
+                                <div class="btn">See collection
+                                </div>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+            </div>
+
+            <div class="new">
+
+                <h3 class="page_heading">
+                    <span class="heading_ins">Featured Products
+                        <span class="bord1" style="margin-right: 90px;"></span>
+                        <span class="bord2" style="margin-left: 90px;">
+                        </span>
+                    </span>
+                </h3>
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="showc_img">
+                                <img id="si_1" src="img/new-1.png" alt="" />
+                            </div>
+                            <div class="product_info">
+                                <div class="product_price">
+                                    <span class="money">$249.00</span>
+                                </div>
+                                <div class="product_name">
+                                    <h4>VOSTK EUROPE 64 - WATCH</h4>
+                                </div>
+                                <div class="product_desc">
+                                    Our elegant products are only of premium quality and we hope that you`ll appreciate all...
+                                </div>
+                                <div class="product_link">
+                                    <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="showc_img">
+                                <img id="si_1" src="img/new-2.png" alt="" />
+                            </div>
+                            <div class="product_info">
+                                <div class="product_price">
+                                    <span class="money">$599.00</span>
+                                </div>
+                                <div class="product_name">
+                                    <h4>HERITAGE BLACK BAY 41 S&G</h4>
+                                </div>
+                                <div class="product_desc">
+                                        Hours, minutes, seconds. Fitted with the Manufacture Calibre MT5612, the Heritage Black Bay S&G model also introduces a date function to the Black Bay family.                                </div>
+                                <div class="product_link">
+                                    <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                                <div class="showc_img">
+                                        <img id="si_1" src="img/new-3.png" alt="" />
+                                    </div>
+                                    <div class="product_info">
+                                        <div class="product_price">
+                                            <span class="money">$999.00</span>
+                                        </div>
+                                        <div class="product_name">
+                                            <h4>Orologi: nuovo Breitling Navitimer</h4>
+                                        </div>
+                                        <div class="product_desc">
+                                                Un cronografo dal meccanismo complicatissimo rende questo modello un sofisticato gioiello dell'industria delle lancette su quadrante                                        <div class="product_link">
+                                            <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
+                                        </div>
+                                    </div>                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="brands">
+                <img id="si_1" src="img/brands.png" alt="" />
+                
+
+            </div>
+
+        </div>
     </section>
 
     <footer>
-     <h6>Copyright ...... </h6>
+        <!--<h6>Copyright ...... </h6>-->
 
     </footer>
 
 
-   
-</body>
-</html>
 
+</body>
+
+</html>
