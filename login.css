@@ -242,3 +242,24 @@ span.note a {
 span.space{
     height: 100%;
 }
+form{
+    width:50%;
+}
+
+#editP {
+    margin: -6% 0% 0% 39%;
+    width: 60%;
+}
+
+.col-sm-4 {
+    width: 33.33333333333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#id{
+    visibility: hidden;
+}

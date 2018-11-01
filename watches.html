@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
 
-<body onload="slide()">
+<body onload="showProduct()">
     <header>
 
         <nav>
@@ -74,7 +74,7 @@
                             <div class="ins">
                                 <h3>MEN’S WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn">See collection</div>
+                                <div class="btn"><button onclick="viewMenWatches()">collection</button></div>
                             </div>
                         </a>
                     </td>
@@ -87,7 +87,7 @@
                             <div class="ins">
                                 <h3>WOMEN'S WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn">See collection</div>
+                                <div class="btn"><button onclick="viewWomenWatches()">collection</button> </div>
                             </div>
                         </a>
                     </td>
@@ -98,9 +98,9 @@
                                 <img id="si_1" src="img/sports-watche.png" alt="" />
                             </div>
                             <div class="ins">
-                                <h3>SPORTS WATCHES</h3>
+                                <h3>KIDS WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn">See collection
+                                <div class="btn"><button onclick="viewKidsWatches()">See collection</button>
                                 </div>
                         </a>
                     </td>
@@ -119,63 +119,7 @@
                     </span>
                 </h3>
 
-                <table>
-                    <tr>
-                        <td>
-                            <div class="showc_img">
-                                <img id="si_1" src="img/new-1.png" alt="" />
-                            </div>
-                            <div class="product_info">
-                                <div class="product_price">
-                                    <span class="money">$249.00</span>
-                                </div>
-                                <div class="product_name">
-                                    <h4>VOSTK EUROPE 64 - WATCH</h4>
-                                </div>
-                                <div class="product_desc">
-                                    Our elegant products are only of premium quality and we hope that you`ll appreciate all...
-                                </div>
-                                <div class="product_link">
-                                    <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="showc_img">
-                                <img id="si_1" src="img/new-2.png" alt="" />
-                            </div>
-                            <div class="product_info">
-                                <div class="product_price">
-                                    <span class="money">$599.00</span>
-                                </div>
-                                <div class="product_name">
-                                    <h4>HERITAGE BLACK BAY 41 S&G</h4>
-                                </div>
-                                <div class="product_desc">
-                                        Hours, minutes, seconds. Fitted with the Manufacture Calibre MT5612, the Heritage Black Bay S&G model also introduces a date function to the Black Bay family.                                </div>
-                                <div class="product_link">
-                                    <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                                <div class="showc_img">
-                                        <img id="si_1" src="img/new-3.png" alt="" />
-                                    </div>
-                                    <div class="product_info">
-                                        <div class="product_price">
-                                            <span class="money">$999.00</span>
-                                        </div>
-                                        <div class="product_name">
-                                            <h4>Orologi: nuovo Breitling Navitimer</h4>
-                                        </div>
-                                        <div class="product_desc">
-                                                Un cronografo dal meccanismo complicatissimo rende questo modello un sofisticato gioiello dell'industria delle lancette su quadrante                                        <div class="product_link">
-                                            <button class="btn btn-cart" type="submit" id="add_btn" onclick="buy(); addproduct() ">Add to cart</button>
-                                        </div>
-                                    </div>                        </td>
-                    </tr>
-                </table>
+                <div id="productTable"></div>
             </div>
 
             <div class="brands">
@@ -192,7 +136,7 @@
 
     </footer>
 
-
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 
