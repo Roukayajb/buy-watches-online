@@ -1,8 +1,7 @@
 header#header {
     height: 55px;
     width: 102%;
-    background: black;
-    margin-top: -1%;
+    background: lightslategrey;    margin-top: -1%;
     margin-left: -1%;
 }
 header#header h1.site_title {
@@ -53,7 +52,7 @@ header#header h2.section_title a{
     float: right;
     display: inline-block;
     margin-right: 15px;
-    margin-top: 10px;
+    margin-top: 17px;
     text-decoration: none;
     cursor: pointer;
     font-family: sans-serif;
@@ -117,7 +116,7 @@ li {
 #sidebar li a {
     color: #666666;
     text-decoration: none;
-    display: inline-block;
+   /*display: inline-block;*/
     height: 17px;
     line-height: 17px;
     text-shadow: 0 1px 0 #fff;
@@ -173,12 +172,12 @@ i{
     margin-right: 5px;
     color:white;
 }
-/*products en Dashbord
+/*products en Dashbord*/
 
-#index{
+/*#index{
     visibility: hidden;
-}
-*/
+}*/
+
 
 .panel {
     margin-bottom: 20px;
@@ -348,7 +347,6 @@ input#categorie {
     border-color: #2e6da4;
 }
 
-<<<<<<< HEAD
 /*Products-List*/
 
 #dvcontainer {
@@ -389,7 +387,7 @@ th {
     font-size: 18px;
     color: #fff;
     line-height: 1.4;
-    background-color: #6c7ae0;
+    background-color: lightslategrey;
     padding-top: 18px;
     padding-bottom: 18px;
     font-weight: unset;
@@ -429,39 +427,3 @@ button.btnDelete {
 }
 
 
-=======
-#divlist{
-
-    margin-top: 8%;
-}
-
-table th{
-    
-    color: #f5eded;
-    height: 42px;
-    background-color: rgb(13, 13, 14);
-    font-family: serif;
-    
-}
-table tr {
-    font-family: OpenSans-Regular;
-    font-size: 15px;
-    color: #808080;
-    line-height: 1.2;
-    font-weight: unset;
-    height: 50px;
-   
-}
-tr:nth-child(even){
-    background-color: #e8e9ed;
-
-}
-table td, table th {
-    padding-left: 8px;
-}
-table{
-    width: 85%;
-    margin: 0 0% 0% 3%;
-   
-}
->>>>>>> e755321bf4212cd1acdbc30c5b02dfcf965ed1a6
