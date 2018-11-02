@@ -11,14 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
 
+
 <body onload="showProduct1();">
+
+
     <header>
 
         <nav>
             <div class="account">
-                <a href=# id="create">
+                <a href=register.html id="create">
                     <i class="fa fa-user"></i>Create Account</a>
-                <a href=# id="login">
+                <a href=login.html id="login">
                     <i class="fa fa-lock"></i>Log In</a>
                 <a href="product_cart.html" id="cart">
                         <i class="fa fa-cart-plus"></i>Cart</a>
@@ -74,7 +77,7 @@
                             <div class="ins">
                                 <h3>MEN’S WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn">See collection</div>
+                                <div class="btn"><button onclick="viewMenWatches()">collection</button></div>
                             </div>
                         </a>
                     </td>
@@ -87,7 +90,7 @@
                             <div class="ins">
                                 <h3>WOMEN'S WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn">See collection</div>
+                                <div class="btn"><button onclick="viewWomenWatches()">collection</button> </div>
                             </div>
                         </a>
                     </td>
@@ -100,7 +103,7 @@
                             <div class="ins">
                                 <h3>KIDS WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn">See collection
+                                <div class="btn"><button onclick="viewKidsWatches()">See collection</button>
                                 </div>
                         </a>
                     </td>
@@ -118,7 +121,10 @@
                         </span>
                     </span>
                 </h3>
-            <div id="productTable" ></div>
+
+         <div id="productTable" ></div>
+
+
             </div>
 
             <div class="brands">
@@ -134,6 +140,7 @@
         <!--<h6>Copyright ...... </h6>-->
 
     </footer>
+
 
     <script src="js/script.js"></script>
 

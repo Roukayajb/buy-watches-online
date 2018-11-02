@@ -99,14 +99,25 @@ i.fa.fa-cart-plus {
     color: #3fa168;
 }
 
-#login{
+#logout {
     padding-right: 8px;
     color: #777777;
     cursor: pointer;
     font-family: 'Exo', sans-serif;
     font-size: 80%;
 }
+#login{
+        padding-right: 8px;
+        color: #777777;
+        cursor: pointer;
+        font-family: 'Exo', sans-serif;
+        font-size: 80%;
+        border-right: solid 1px; 
+}
 
+#logout :hover{
+    color: #13ba56;
+}
 #login :hover{
     color: #3fa168;
 }
