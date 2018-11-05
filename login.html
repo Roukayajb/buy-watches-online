@@ -3,52 +3,65 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Log In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
-<body>
+<body class="products">
         <header>
-                <nav>
-                       <div class="account">
-                               <a href=register.html id="create"><i class="fa fa-user"></i>Create Account</a>
-                               <a href=login.html id="login"><i class="fa fa-lock"></i>Log In</a>
-                           </div>
-               <div class="navbar">
-       
+            <nav>
+                <div class="account">
+                    <a href="register.html" id="create">
+                        <i class="fa fa-user"></i>Create Account</a>
+                    <a href="login.html" id="login">
+                        <i class="fa fa-lock"></i>Log In</a>
+                        <a href="product_cart.html" id="cart">
+                                <i class="fa fa-cart-plus"></i>Cart</a>
+                </div>
+                <div class="navbar">
+    
                     <div class="title">
-                    <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
-                    <a href=#><h1 class="logo">Watches</h1></a>
-                   </div>
+                        <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
+                        <a href="watches.html">
+                            <h1 class="logo">Watches</h1>
+                        </a>
+                    </div>
                     <div class="menu">
-                     <a href=# id="home">Home</a>
-                     <a href=# id="products" >Products</a> 
-                     <a href=# id="contacts">Contacts</a>    
-                   </div>  
-               </div>  
-                   
-                </nav>
-       
-                
-       
-           </header>
-    <div class="menubar">
-        <ul class="accountBar">
-            <li><a href="watches.html" title="back to Home page">Home</a></li>
-            <li><span>Account</span></li>
-        </ul>
-        <div class="row sidebar sidebar_off">
-            <div id="maincontent" class="content">
-                <div id="customer">
-                    <h2 class="page_heading">
-                        <span class="heading">Customer Login
-                            <span class="bord1"></span>
-                            <span class="bord2"></span>
-                        </span>
-                    </h2>
+                        <a href="watches.html" id="home">Home</a>
+                        <a href="products.html" id="products">Products</a>
+                        <a href="contacts.html" id="contacts">Contacts</a>
+                    </div>
+                </div>
+    
+            </nav>
+    
+        </header>
+        <section>
+            <div id="main">
+                <div class="bg1">
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a href="watches.html" class="homepage-link">Home</a>
+                            </li> /
+                            <li>
+                                <span class="page-title">Log In</span>
+                            </li>
+                        </ul>
+                        
+                                <div class="main_content">
+                                    <div class="contacts-scope">
+                                        <div class="page-header">
+                                            <h1 class="page-heading">
+                                                <span class="heading_ins">
+                                                        Customer Login                                                   
+                                                        <span id="bord-Cu" style="margin-right: 45px;"></span>
+                                                        <span id="bord-Lo" style="margin-left: 45px;"></span>                                                
+                                            </h1>
+                                        </div>
                     <div class="form-horizontal">
                         <div  id="customerlogin">
                             <div id="login_email" class=" clearfix large_form form-group">
@@ -77,7 +90,7 @@
         </div>
     </div>
     <script src="login.js"></script>
-
+    <script src="product_cart.js"></script>
 </body>
 
 </html>

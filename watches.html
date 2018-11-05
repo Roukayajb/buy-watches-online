@@ -11,24 +11,18 @@
     <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
 
-
 <body onload="showProduct1();">
-
-
     <header>
-
         <nav>
             <div class="account">
-                <a href=register.html id="create">
+                <a href="register.html" id="create">
                     <i class="fa fa-user"></i>Create Account</a>
-                <a href=login.html id="login">
+                <a href="login.html" id="login">
                     <i class="fa fa-lock"></i>Log In</a>
                 <a href="product_cart.html" id="cart">
-                        <i class="fa fa-cart-plus"></i>Cart</a>
-
+                    <i class="fa fa-cart-plus"></i>Cart</a>
             </div>
             <div class="navbar">
-
                 <div class="title">
                     <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
                     <a href="watches.html">
@@ -41,14 +35,9 @@
                     <a href="contacts.html" id="contacts">Contacts</a>
                 </div>
             </div>
-
         </nav>
-
-
-
     </header>
     <section>
-
         <div id="sliderImages">
             <figure>
                 <img id="si_1" src="img/slide1.jpg" width="100%" />
@@ -56,7 +45,6 @@
                 <img id="si_3" src="img/slide3.jpg" width="100%" />
                 <img id="si_4" src="img/slide4.jpg" width="100%" />
                 <img id="si_5" src="img/slide5.jpg" width="100%" />
-
             </figure>
         </div>
         <div class="featured">
@@ -77,11 +65,10 @@
                             <div class="ins">
                                 <h3>MEN’S WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn"><button onclick="viewMenWatches()">collection</button></div>
+                                <div class="btn">See collection</div>
                             </div>
                         </a>
                     </td>
-
                     <td>
                         <a href="Ladies-watches.html">
                             <div class="showc_img">
@@ -90,11 +77,10 @@
                             <div class="ins">
                                 <h3>WOMEN'S WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn"><button onclick="viewWomenWatches()">collection</button> </div>
+                                <div class="btn">See collection</div>
                             </div>
                         </a>
                     </td>
-
                     <td>
                         <a href="Kids-watches.html">
                             <div class="showc_img">
@@ -103,48 +89,30 @@
                             <div class="ins">
                                 <h3>KIDS WATCHES</h3>
                                 <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.</p>
-                                <div class="btn"><button onclick="viewKidsWatches()">See collection</button>
+                                <div class="btn">See collection
                                 </div>
                         </a>
                     </td>
                 </tr>
-
             </table>
-            </div>
-
-            <div class="new">
-
-                <h3 class="page_heading">
-                    <span class="heading_ins">Featured Products
-                        <span class="bord1" style="margin-right: 90px;"></span>
-                        <span class="bord2" style="margin-left: 90px;">
-                        </span>
+        </div>
+        <div class="new">
+            <h3 class="page_heading">
+                <span class="heading_ins">Featured Products
+                    <span class="bord1" style="margin-right: 90px;"></span>
+                    <span class="bord2" style="margin-left: 90px;">
                     </span>
-                </h3>
-
-         <div id="productTable" ></div>
-
-
-            </div>
-
-            <div class="brands">
-                <img id="si_1" src="img/brands.png" alt="" />
-                
-
-            </div>
-
+                </span>
+            </h3>
+            <div id="productTable"></div>
+        </div>
+        <div class="brands">
+            <img id="si_1" src="img/brands.png" alt="" />
+        </div>
         </div>
     </section>
-
-    <footer>
-        <!--<h6>Copyright ...... </h6>-->
-
-    </footer>
-
-
     <script src="js/script.js"></script>
-
-
+    <script src="product_cart.js"></script>
 </body>
 
 </html>

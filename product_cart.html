@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page cart</title>
+    <title> Client Cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="cart.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 </head>
-
-<body>
+<body onload="listcommand();">
     <header>
-        <div class="account">
-            <a href=profile.html id="create"><i class="fa fa-user"></i>My account</a>
-            <a href="watches.html" onload="logout();" id="login"><i class="fa fa-lock"></i>Log out</a>
+            <nav>
+                    <div class="account">
+                        <a href="profile.html" id="create">
+                            <i class="fa fa-user"></i>My Account</a>
+                            <a href="watches.html" onclick="logout();" id="logout"><i class="fa fa-lock"></i>Log out</a>
+                    </div>
+                    <div class="navbar">
+        
+                        <div class="title">
+                            <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
+                            <a href="watches.html">
+                                <h1 class="logo">Watches</h1>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="watches.html" id="home">Home</a>
+                            <a href="products.html" id="products">Products</a>
+                            <a href="contacts.html" id="contacts">Contacts</a>
+                        </div>
+                    </div>
+        
+                </nav>
+        
+            </header>
+            <section>
+                <div id="main">
+                    <div class="bg1">
+                        <div class="container">
+                            <ul class="breadcrumb">
+                                <li><a href="profile.html" class="profile-link" title="Back to your profile">Your Page</a></li> 
+                                <li><span class="page-cart">Your Shopping Cart</span></li>
+                            </ul>
+                                    <div class="main_content">
+                                        <div class="contacts-scope">
+                                            <div class="page-header">
+                                                <h1 class="page-heading">
+                                                    <span class="heading_ins">
+                                                            Shopping Cart   
+                                                        <span id="bord-sh" style="margin-right: 45px;"></span>
+                                                        <span id="bord-ca" style="margin-left: 45px;"></span>
+                                                    </span>
+                                                </h1>
+                                            </div>
+        <div id="price_tab">
         </div>
-    </header>
-
-    <ul class="breadcrumb">
-        <li><a href="profile.html" class="profile-link" title="Back to your profile">Your Page</a></li>
-        <li><span class="page-cart">Your Shopping Cart</span></li>
-    </ul>
-    <section id="main">
-        <table id="price_tab" border="1px">
-
-        </table>
-        <div>
-            <button id="sure" onclick="confirm(); genpdf()">CONFIRM</button>
-            <button id="cancel" onclick="cancel()">CANCEL</button>
+        
+             <div class="btn-toolbar form-group">
+            <input type="submit" id="sure" value="Confrim" class="btn btn-primary" onclick="confirm();">
+            <input type="submit" id="cancel" value="Cancel" class="btn btn-info" onclick="cancel();">
         </div>
     </section>
     <script src="product_cart.js"></script>
     <script src="login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
 </body>
-
 </html>

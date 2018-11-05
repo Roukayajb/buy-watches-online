@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
-    
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Charmonman|Dancing+Script|Great+Vibes" rel="stylesheet">
 
-    
+
 </head>
+
 <body onload="editProfil();">
-    <div class="menubar">
+
+
+    <header>
+        <nav>
+            <div class="account">
+                <a href=profile.html id="create"><i class="fa fa-user"></i>My account</a>
+                <a onclick="logout();" id="login"><i class="fa fa-lock"></i>Log out</a>
+            </div>
+            <div class="navbar">
+
+                <div class="title">
+                    <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
+                    <a href="watches.html">
+                        <h1 class="logo">Watches</h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="watches.html" id="home">Home</a>
+                    <a href="products.html" id="products" >Products</a> 
+                    <a href="contacts.html" id="contacts">Contacts</a>   
+                </div>
+            </div>
+
+        </nav>
+
+
+
+    </header>
+
+    <section>
+        <div id="main">
+            <div class="bg1">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="watches.html" class="homepage-link">Home</a>
+                        </li> /
+                        <li>
+                            <span class="page-title">Account</span>
+                        </li>
+                    </ul>
+                    
+                            <div class="main_content">
+                                <div class="contacts-scope">
+                                    <div class="page-header">
+                                        <h1 class="page-heading">
+                                            <span class="heading_ins">
+                                                Edit Profile
+                                                <span id="bord10" style="margin-right: 45px;"></span>
+                                                <span id="bord20" style="margin-left: 45px;"></span>
+                                            </span>
+                                        </h1>
+                                    </div>
+
+    <!--<div class="menubar">
         <ul class="accountBar">
             <li><a href="watches.html" title="back to Home page">Home</a></li>
             <li><span>Account</span></li>
@@ -25,13 +82,16 @@
                             <span class="bord1"></span>
                             <span class="bord2"></span>
                         </span>
-                    </h2>
-                    <div class="form-horizontal">  <div id="editP"></div> </div>
-   
-</div>
-</div>
-</div>
-</div>
-<script src="ecommerce.js"></script>
+                    </h2>-->
+                    <div class="form-horizontal">
+                        <div id="editP"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ecommerce.js"></script>
 </body>
+
 </html>

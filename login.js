@@ -6,7 +6,7 @@ function log() {
     console.log(userpwd);
     var users = JSON.parse(localStorage.getItem('tabOfClient'));
     for (var i = 0; i < users.length; i++) {
-        if ((usermail == users[i].Email) && (userpwd == users[i].Password)) {
+        if ((usermail == users[i].Email) && (userpwd == users[i].Password )) {
             alert("welcome" + " " + users[i].Firstname);
             var logged = {
                 id: users[i].Id
@@ -15,7 +15,7 @@ function log() {
             localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
             window.location.href = "homeClient.html";
             break;
-        } else if (((usermail == users[i].email) && (userpwd == users[i].Password)) && userpwd == "admin") {
+        } else if ((usermail == users[i].email) && (userpwd == users[i].Password) ){
             alert("welcome" + users[i].Firstname);
             var logged = {
                 id: users[i].id
@@ -24,6 +24,13 @@ function log() {
             console.log(loggedusers);
             localStorage.setItem('loggeduser', JSON.stringify(loggedusers));
             window.location = "admin.html";
+            break;
+        }else if ((usermail == users[i].Email) && (userpwd != users[i].Password)) {
+            alert('verify your password');
+            break;
+        }else if ((userpwd == users[i].Password)&& (usermail != users[i].Email)) {
+            alert('verify your mail');
+            break;
         }
     }
     if (i == users.length) {
@@ -32,10 +39,9 @@ function log() {
 
 }
 
-
 function logout() {
+    localStorage.removeItem('cart');
+    localStorage.removeItem('producttobuy');
     localStorage.removeItem('loggeduser');
     document.location.href = "watches.html";
-
-
 }

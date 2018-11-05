@@ -25,7 +25,7 @@ function Inscription() {
         Age: age,
         Email: email,
         Password: password,
-        ListFavorite: []
+        Listcommand: []
     };
 
     tabOfClient.push(client);
@@ -127,16 +127,15 @@ function ListClient() {
 
 function viewProfil() {
     var tabOfClient = JSON.parse(localStorage.getItem("tabOfClient"));
-    var loggeduser = JSON.parse(localStorage.getItem("loggedId"));
+    var loggeduser = JSON.parse(localStorage.getItem("loggeduser"));
 
     for (i = 0; i < tabOfClient.length; i++) {
-        if (tabOfClient[i].Id == loggeduser)
-       { 
-       
-        client = tabOfClient[i];
+        if (tabOfClient[i].Id == loggeduser[0].id) {
+
+            client = tabOfClient[i];
         }
     }
-    
+    var profil = document.getElementById("pro");
     profile = " <strong>First Name:    </strong> " + client.Firstname + "<br><br>";
     profile += "<strong>Last Name:    </strong> " + client.Lastname + "<br><br>";
     profile += "<strong>Email:    </strong>" + client.Email + "<br><br>";
@@ -144,15 +143,85 @@ function viewProfil() {
     profile += "<strong>Adresse:   </strong> " + client.Adresse + "<br><br>";
     profile += "<strong>Age:    </strong> " + client.Age + "<br><br>";
     profile += "<strong>Solde:     </strong> " + client.Solde + "<br><br>";
-    profile += "<button class='btn btn-primary' onclick='editProfil()'> Edit</button>";
-    var profil = document.getElementById("pro");
+    profile += '<button class="btn btn-primary" onclick="redirect()"> Edit</button>';  
+   
     profil.innerHTML = profile;
 }
-/* pas encore terminée*/
-function editProfil(){
 
-    var profil = document.getElementById("pro");
-    var edit= document.getElementById("edit");
-    edit.innerHTML=profil.innerHTML;
-    document.getElementById("edit").readonly=false;
+function redirect(){
+    window.location.href="editProfile.html";
+}
+
+
+
+/* pas encore terminée*/
+function editProfil() {
+    var tabOfClient = JSON.parse(localStorage.getItem("tabOfClient"));
+    var loggeduser = JSON.parse(localStorage.getItem("loggeduser"));
+
+    for (i = 0; i < tabOfClient.length; i++) {
+        if (tabOfClient[i].Id == loggeduser[0].id) {
+
+            client = tabOfClient[i];
+        }
+    }
+ 
+    
+
+  profil = '<form><label id="id1" for="customer-email" class="login control-label col-sm-4">ID</label><input disabled  type="email" id="id" class="form-control" value="' + client.Id + '"/><br><br>';
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>First name</label><input  type='email' id='firstname' class='form-control' value='" + client.Firstname + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Last name</label><input type='email' class='form-control' id='lastname' value='" + client.Lastname + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Email</label><input type='email' class='form-control' id='email' value='" + client.Email + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Phone Number</label><input class='form-control' type='email' id='tel' value='" + client.Tel + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Adresse</label><input class='form-control' type='email' id='adresse' value='" + client.Adresse + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Age</label><input class='form-control' type='email' id='age' value='" + client.Age + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Solde</label><input class='form-control' type='email' id='solde' value='" + client.Solde + "'/><br><br>";
+    profil += "<label for='customer-email' class='login control-label col-sm-4'>Password</label><input class='form-control' type='email' id='password' value='" + client.Password + "'/><br><br>";
+    profil += "<button class='btn btn-primary'  onclick='updateProfile()'> Save change</button></form>";
+
+    var divprofil = document.getElementById("editP");
+    divprofil.innerHTML = profil;
+}
+
+
+
+
+
+
+
+function updateProfile() {
+    var id=document.getElementById("id").value;
+    var nom = document.getElementById("firstname").value;
+    var lastname = document.getElementById("lastname").value;
+    var tel = document.getElementById("tel").value;
+    var solde = document.getElementById("solde").value;
+    var adresse = document.getElementById("adresse").value;
+    var age = document.getElementById("age").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    tabOfClient=JSON.parse(localStorage.getItem("tabOfClient"));
+
+   
+    client = {
+        Id:id,
+        Firstname:nom,
+        Lastname:lastname,
+        Tel:tel,
+        Solde: solde,
+        Adresse: adresse,
+        Age: age,
+        Email: email,
+        Password: password,
+        Listcommand: []
+
+    };
+    for(i=0;i<tabOfClient.length;i++)
+    {
+        if (tabOfClient[i].Id==id){
+           tabOfClient[i]=client;
+        }
+    }
+    localStorage.setItem("tabOfClient",JSON.stringify(tabOfClient));
+    console.log(tabOfClient);
+    alert("Your data are changed successfully ")
 }

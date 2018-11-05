@@ -2,7 +2,6 @@ body.products {
     background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 700%);
     height: 100px;
 }
-
 a {
     text-decoration: none;
 }
@@ -32,7 +31,6 @@ a {
     margin: 30px 7px 0px 30px;
     border-right: ridge 2px;
 }
-
 .logo, .menu, .account{
     display: inline;
 }
@@ -48,17 +46,14 @@ i.fa.fa-user {
     margin-right: 3px;
     color: #777777;
 }
-
 i.fa.fa-lock{
     margin-right: 3px;
     color: #777777;
 }
-
 i.fa.fa-cart-plus {
     margin-right: 3px;
     color: #777777;
 }
-
 .menu{
     text-align: center;
     margin-left: 24%;
@@ -74,13 +69,11 @@ i.fa.fa-cart-plus {
 .menu, .title, .account{
     display:inline-block;
 }
-
  #home, #products, #contacts {
         text-decoration: none;
         font-size: 20px;
         color: #777777;
  }
-
  /*#home, #products, #contacts :hover{
      color: black;
  }*/
@@ -94,11 +87,9 @@ i.fa.fa-cart-plus {
     font-family: 'Exo', sans-serif;
     font-size: 80%;
 }
-
 #create :hover{
     color: #3fa168;
 }
-
 #logout {
     padding-right: 8px;
     color: #777777;
@@ -114,14 +105,12 @@ i.fa.fa-cart-plus {
         font-size: 80%;
         border-right: solid 1px; 
 }
-
 #logout :hover{
     color: #13ba56;
 }
 #login :hover{
     color: #3fa168;
 }
-
 #cart{
     padding-right: 8px;
     color: #777777;
@@ -129,23 +118,21 @@ i.fa.fa-cart-plus {
     font-family: 'Exo', sans-serif;
     font-size: 80%;
 }
-
 figure.img{
     width: 100%;
     height: 30%;
 }
-
 @keyframes slidy {
     0%{ left: 0px;}
-	17%{ left: 0px;}
-	25%{ left: -100%;}
-	37%{ left: -100%;}
-	45%{ left: -200%;}
-	57%{ left: -200%;}
-	65%{ left: -300%;}
-	77%{ left: -300%;}
-	85%{ left: -400%;}
-	95%{ left: -400%;}
+    17%{ left: 0px;}
+    25%{ left: -100%;}
+    37%{ left: -100%;}
+    45%{ left: -200%;}
+    57%{ left: -200%;}
+    65%{ left: -300%;}
+    77%{ left: -300%;}
+    85%{ left: -400%;}
+    95%{ left: -400%;}
     }
     
     
@@ -169,11 +156,9 @@ body { margin: 0; }
     border-bottom: 1px solid #bfbfbf;
     margin: 9px 0 0 0;
 }
-
 .featured {
     background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);
 }
-
 .page_heading {
     margin: 54px 0 0;
     font: 20px Roboto Condensed;
@@ -183,12 +168,10 @@ body { margin: 0; }
     position: relative;
     z-index: 1;
 }
-
 .heading_ins {
     padding: 0 10px;
     font-family: 'Exo', sans-serif;
 }
-
 .bord1 {
     left: 4%;
     right: 54%;
@@ -198,7 +181,6 @@ body { margin: 0; }
     background: #cfcfcf;
     height: 1px;
 }
-
 .bord2 {
     right: 4%;
     left: 54%;
@@ -208,12 +190,10 @@ body { margin: 0; }
     background: #cfcfcf;
     height: 1px;
 }
-
 .font :hover {
  box-shadow:  0 1px 5px rgba(0,0,0,0);
  transition: .3s ease-in-out;
 }
-
 .showc_img {
     max-width: 150px;
     float: left;
@@ -221,59 +201,48 @@ body { margin: 0; }
     width: 100%;
     margin-bottom: 60px;
 }
-
 .prod-1{
     width: 277px;
     padding-bottom: 55px;
 }
-
 .prod-2 {
     width: 35%;
 }
-
 .prod-3 {
     width: 31%;
 }
-
 .prod-4 {
     padding-bottom: 75px;
     width: 31%;
 }
-
 .prod-5 {
     width: 37%;
     padding-top: 35px;
 }
-
 .prod-6 {
     width: 33%;
     padding-top: 60px;
 }
-
 #si_1 {
     width: 100%;
     height: auto;
 }
-
 .ins {
     overflow: hidden;
     margin-top: 2px;
     padding-bottom: 2px;
 }
-
 h3 {
     font: 30px/1.05em Roboto Condensed;
     color: #5a7967;
     text-transform: uppercase;
 }
-
 p {
     color: #777777;
     margin: 10px 0;
     padding: 0;
     line-height: 1.8em;
 }
-
 #contact_text {
     color: #777777;
     margin: 10px 0;
@@ -281,7 +250,6 @@ p {
     line-height: 1.8em;
     margin-left: -260px;
 }
-
 .btn {
     margin-top: 15px;
     background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);
@@ -299,56 +267,45 @@ p {
     vertical-align: middle;
     cursor: pointer;
 }
-
 .btn :hover{
     background-color: #3fa168;
 }
-
 .new {
     background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);
 }
-
 .product_info {
     overflow: hidden;
     padding: 12px 0px 3px 0;
 }
-
 .money {
     font-size: 30px;
     line-height: 1em;
 }
-
 .product_name {
     padding-top: 10px;
     min-height: 56px;
     font-size: 16px;
     color: #5a7967;
 }
-
 .product_desc {
     padding-top: 3px;
     font-size: 13px;
     line-height: 1.8em;
     color: #777777;
 }
-
 /*Products page*/
-
 #main{
     margin-top: 47px;
 }
-
 .bg1 {
     padding-bottom: 36px;
     position: relative;
     z-index: 1;
 }
-
 .container{
     margin-right: 82px;
     margin-left: 82px;
 }
-
 .breadcrumb {
     margin: 20px 0 35px;
     color: #ffffff;
@@ -358,13 +315,12 @@ p {
     -moz-border-radius: 0;
     border-radius: 0;
     list-style: none;
+    width: 95%
 }
-
 li {
     display: inline-block;
     font-family: 'Exo', sans-serif;
 }
-
 .homepage-link{
     color: #ffffff;
     transition: .5s ease-in-out;
@@ -372,22 +328,18 @@ li {
     line-height: inherit;
     font-weight: inherit;
 }
-
 .sidebar {
     margin-right: -15px;
     margin-left: -15px;
     margin-top: -100px;
 }
-
 .column_center {
     width: 100%;
 }
-
 /*.collection-scope {
     margin-top: -717px;
     display: block;
 }*/
-
 #main_content {
     margin: 2% 0px -23px -10%;
     position: relative;
@@ -401,7 +353,6 @@ li {
     padding-right: 15px;
     padding-left: 15px;*/
 }
-
 .main_content {
     margin: 5% 0px -23px 26%;
     position: relative;
@@ -409,11 +360,9 @@ li {
     padding-right: 15px;
     padding-left: 15px;
 }
-
 h1.page-heading {
     margin: 15px 0;
 }
-
 .page-heading {
     font: 20px Roboto Condensed;
     color: #000000;
@@ -422,18 +371,15 @@ h1.page-heading {
     position: relative;
     z-index: 1;
 }
-
 .row {
     margin-right: -15px;
     margin-left: -15px;
 }
-
 .prod-inside {
     padding: 20px 10px;
     box-shadow: 0 1px 5px rgba(0,0,0,0);
     transition: .3s ease-in-out;
 }
-
 .product-img {
     width: 100px;
     float: left;
@@ -442,23 +388,19 @@ h1.page-heading {
     background: transparent;
     transition: .3s ease-in-out;
 }
-
 .product_img a {
     display: block;
     position: relative;
 }
-
 a {
     color: #5a7967;
     text-decoration: none;
 }
-
 a, span {
     vertical-align: baseline;
     line-height: inherit;
     font-weight: inherit;
 }
-
 aside{
     height: 110vh;
     padding-left: 26px;
@@ -473,21 +415,16 @@ aside{
     bottom: 0;
     top: 30px;
     z-index: 999;
-
 }
-
 .column_left {
     margin-left: -3%;
     margin-top: 91px;}
-
 .widget {
     margin-bottom: 30px !important;
 }
-
 h3.widget_header {
     margin: 31px 0px;
 }
-
 .widget_header {
     margin: 54px 0 0;
     font: 20px Roboto Condensed;
@@ -497,15 +434,12 @@ h3.widget_header {
     position: relative;
     z-index: 1;
 }
-
 ul {
     list-style: none;
 }
-
 .list li {
     padding: 13px 15px;
 }
-
 .list li a {
     font-size: 15px;
     color: #5a7967;
@@ -514,12 +448,10 @@ ul {
     line-height: inherit;
     font-weight: inherit;
 }
-
 ul.list li + li {
     border-top: 1px solid #cfcfcf;
     padding: 10px 0;
 }
-
 @media (min-width: 1200px){
 .product_listing_sidebar .product {
     -webkit-animation-name: zoom_in;
@@ -528,29 +460,24 @@ ul.list li + li {
     animation-duration: .8s;
 }
 }
-
 .product_listing_sidebar .product {
     margin-top: 0px;
     display: block;
     margin-left: -9px;}
-
 @media (min-width: 1200px){
 .animated {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 }
-
 .clearfix {
     zoom: 1;
 }
-
 .product_listing_sidebar .product_img {
     float: left;
     margin-right: 10px;
     width: auto;
 }
-
 .product .product_img {
     width: 180px;
     float: left;
@@ -563,17 +490,14 @@ ul.list li + li {
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
-
 .product_img a{
     color: #5a7967;
     text-decoration: none;
 }
-
 #product_info {
     overflow: hidden;
     padding: 12px 0px 3px 0;
 }
-
 #product_img{
     width: 130px;
     float: left;
@@ -581,14 +505,11 @@ ul.list li + li {
     padding: 10px 4px;
     background: transparent;
 }
-
 /*Contacts*/
-
 .contacts-scope {
     margin-top: 50px;
     width: 500px;
 }
-
 #bord1{
     left: -50%;
     right: 54%;
@@ -598,7 +519,6 @@ ul.list li + li {
     background: #cfcfcf;
     height: 1px;
 }
-
 #bord2{
     right: -50%;
     left: 54%;
@@ -608,19 +528,16 @@ ul.list li + li {
     background: #cfcfcf;
     height: 1px;
 }
-
 .product-main {
     width: 170%;
     float: left;
 }
-
 .row {
     margin-right: -15px;
     margin-left: -15px;
     display: inline-flex;
     margin-bottom: 15px;
 }
-
 .form-group1 {
     vertical-align: top !important;
     margin-top: 15px;
@@ -628,24 +545,20 @@ ul.list li + li {
     margin-right: 61px;
     margin-left: 15px;
 }
-
 .form-group2 {
     vertical-align: top !important;
     margin-top: 15px;
     margin-bottom: 0;
     margin-right: 80px;
 }
-
 .form-group3 {
     vertical-align: top !important;
     margin-top: 15px;
     margin-bottom: 0;
 }
-
 .form-group-1 {
     width: 102%;
 }
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -656,12 +569,10 @@ ul.list li + li {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-
 label {
     font-weight: bold;
     font-size: 13px;
 }
-
 /*input[type="text"]{
     height: 34px;
     line-height: 18px;
@@ -677,7 +588,6 @@ label {
     border-radius: 0;
     box-shadow: none;
 }*/
-
 .form-control {
     display: block;
     width: 260px;
@@ -696,16 +606,13 @@ label {
     -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-
 form#contact_form {
     float: right;
     margin-right: 100px;
 }
-
 .contact-form textarea {
     width: 100%;
 }
-
 textarea, textarea.form-control {
     min-width: 100%;
     max-width: 100%;
@@ -719,19 +626,14 @@ textarea, textarea.form-control {
     border-radius: 0;
     box-shadow: none;
 }
-
 textarea.form-control {
     height: auto;
 }
-
 textarea {
     overflow: auto;
     vertical-align: top;
 }
-
-
 /*Men's Watches*/
-
 /*body.men_watches{
     background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);
 }*/
@@ -747,3 +649,45 @@ textarea {
 .section, aside{
     display:inline-block;
 }
+/*INSCRIPTION*/
+#bord-C {
+    left: -50%;
+    right: 60%;
+    position: absolute;
+    top: 50%;
+    margin-top: 1px;
+    background: #cfcfcf;
+    height: 1px;
+}
+#bord-A {
+    right: -50%;
+    left: 60%;
+    position: absolute;
+    top: 50%;
+    margin-top: 1px;
+    background: #cfcfcf;
+    height: 1px;
+}
+
+/*profile page*/
+
+#bord10 {
+    left: -50%;
+    right: 60%;
+    position: absolute;
+    top: 50%;
+    margin-top: 1px;
+    background: #cfcfcf;
+    height: 1px;
+}
+
+#bord20 {
+    right: -50%;
+    left: 60%;
+    position: absolute;
+    top: 50%;
+    margin-top: 1px;
+    background: #cfcfcf;
+    height: 1px;
+}
+

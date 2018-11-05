@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Page Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
@@ -18,25 +17,24 @@
 
 <body onload="viewProfil();">
 
-    <body>
         <header>
             <nav>
                 <div class="account">
                     <a href=profile.html id="create"><i class="fa fa-user"></i>My account</a>
-                    <a href="watches.html" onload="logout();" id="login"><i class="fa fa-lock"></i>Log out</a>
+                    <a href="watches.html" onclick="logout();" id="logout"><i class="fa fa-lock"></i>Log out</a>
                 </div>
                 <div class="navbar">
 
                     <div class="title">
                         <!--<a href=#><img src="img/logo.png" id="logo-img"></a>-->
-                        <a href=#>
+                        <a href="watches.html">
                             <h1 class="logo">Watches</h1>
                         </a>
                     </div>
                     <div class="menu">
-                        <a href=# id="home">Home</a>
-                        <a href=# id="products">Products</a>
-                        <a href=# id="contacts">Contacts</a>
+                        <a href="watches.html" id="home">Home</a>
+                        <a href="products.html" id="products" >Products</a> 
+                        <a href="contacts.html" id="contacts">Contacts</a>   
                     </div>
                 </div>
 
@@ -45,20 +43,31 @@
 
 
         </header>
-        <div class="menubar">
-            <ul class="accountBar">
-                <li><a href="#" title="back to Home page">Home</a></li>
-                <li><span>Account</span></li>
-            </ul>
-            <div class="row sidebar sidebar_off">
-                <div id="maincontent" class="content">
-                    <div id="customer">
-                        <h2 class="page_heading">
-                            <span class="heading">Account Details
-                                <span class="bord1"></span>
-                                <span class="bord2"></span>
-                            </span>
-                        </h2>
+
+        <section>
+            <div id="main">
+                <div class="bg1">
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a href="watches.html" class="homepage-link">Home</a>
+                            </li> /
+                            <li>
+                                <span class="page-title">Account</span>
+                            </li>
+                        </ul>
+                        
+                                <div class="main_content">
+                                    <div class="contacts-scope">
+                                        <div class="page-header">
+                                            <h1 class="page-heading">
+                                                <span class="heading_ins">
+                                                    Account Details
+                                                    <span id="bord10" style="margin-right: 45px;"></span>
+                                                    <span id="bord20" style="margin-left: 45px;"></span>
+                                                </span>
+                                            </h1>
+                                        </div>
                         <div id="profil"></div>
                         <div id="pro"></div>
                         
@@ -67,14 +76,11 @@
             </div>
         </div>
         </div>
+    </section>
 
         <div id="edit"></div>
-
         <script src="ecommerce.js"></script>
-        <footer>
-            <h6>Copyright ...... </h6>
-
-        </footer>
+        <script src="login.js"></script>
     </body>
 
 </html>
