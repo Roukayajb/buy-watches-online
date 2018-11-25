@@ -266,23 +266,31 @@ function admin_list_command() {
     var long = clientcmd.length;
     for (var j = 0; j < long; j++) {
         loncmd = clientcmd[j].Listcommand.length;
+        var element = {
+            id: clientcmd[j].Id,
+            cmd: []
+      };
         if (clientcmd[j].Listcommand.length != 0) {
             for (var l = 0; l < loncmd; l++) {
-                tabofcmd.push(clientcmd[j].Listcommand[l]);
+                element.cmd.push(clientcmd[j].Listcommand[l]);
             }
-        }
+            tabofcmd.push(element);
+        }  
     }
     console.log(tabofcmd);
     if (tabofcmd == []) {
         alert("y a pas de commandes encore !");
     } else {
         var list = "<table border='1px'>";
-        list += "<tr><th>Product Name</th><th>Quantity</th><th>Price</th><th>Total per Product</th></tr>";
+        list += "<tr><th>ID user</th><th>Product Name</th><th>Quantity</th><th>Price</th><th>Total per Product</th></tr>";
         for (i = 0; i < tabofcmd.length; i++) {
-            list += "<tr><td>" + tabofcmd[i].name + "</td>";
-            list += "<td>" + tabofcmd[i].quantity + "</td>";
-            list += "<td>" + tabofcmd[i].product_price + "$" + "</td>";
-            list += "<td>" + tabofcmd[i].totalprod + "$" + "</td></tr>";
+            for(var j=0;j<tabofcmd[i].cmd.length;j++){
+            list += "<tr><td>" + tabofcmd[i].id + "</td>";
+            list += "<td>" + tabofcmd[i].cmd[j].name + "</td>";
+            list += "<td>" + tabofcmd[i].cmd[j].quantity + "</td>";
+            list += "<td>" + tabofcmd[i].cmd[j].product_price + "$" + "</td>";
+            list += "<td>" + tabofcmd[i].cmd[j].totalprod + "$" + "</td></tr>";
+        }
         }
         list += "</table>";
         document.getElementById("listcmd").innerHTML = list;
